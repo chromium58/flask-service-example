@@ -1,0 +1,24 @@
+Test Swagger Doc
+---
+summary:
+  - "Test"
+tags:
+  - "sometag"
+produces:
+  - "application/json"
+parameters:
+  - name: "Request Body"
+    required: true
+    in: body
+    schema:
+      type: object
+      properties:
+        city:
+          type: "string"
+          example: "Moscow"
+
+responses:
+  200:
+    description: Success data
+  400:
+    description: Could not compare cluster
