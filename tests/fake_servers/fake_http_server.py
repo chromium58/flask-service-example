@@ -7,9 +7,9 @@ app = HttpServerMock(__name__)
 def get_free_tcp_port():
     tcp_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     tcp_sock.bind(('', 0))
-    addr, port = tcp_sock.getsockname()
+    _, port = tcp_sock.getsockname()
     tcp_sock.close()
-    return addr, port
+    return '127.0.0.1', port
 
 
 @app.route("/RandomCity", methods=["GET"])

@@ -23,7 +23,8 @@ setup(
     tests_require=[
         'pytest>=4.1.1',
         'pytest-cov>=2.6.1',
-        'http-server-mock==1.2'
+        'http-server-mock==1.2',
+        'atomicwrites==1.4.0'
     ],
     test_suite='tests',
     install_requires=requirements

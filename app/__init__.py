@@ -22,12 +22,12 @@ def create_app(config_name):
     app.config['static_url_path'] = f'{route_path}/swagger_static/'
     app.config['static_folder'] = 'app/swagger_static/static'
     app.config['SWAGGER'] = {
-        'title': 'Pipeline API Swagger',
+        'title': 'API Swagger',
         'doc_dir': './app/swagger_docs/',
         'version': '3.2.2',
         'uiversion': 3,
         'specs_route': f'{route_path}/swagger',
-        'description': "Pipeline Api Documentation",
+        'description': "Api Documentation",
         'static_url_path': f'{route_path}/static',
         "specs": [
             {
