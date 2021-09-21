@@ -14,7 +14,7 @@ class MainControllerTest(unittest.TestCase):
         self.test_client = ExampleClass()
 
     @patch('requests.get')
-    def test_test_method(self, request_get_mock):
+    def test_get_city_weather(self, request_get_mock):
         get_return_value = "test"
         request_get_mock.return_value = MagicMock(str=MagicMock(return_value=get_return_value))
         request_get_mock.return_value.status_code = 200

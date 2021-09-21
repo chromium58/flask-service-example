@@ -1,5 +1,5 @@
 # base image
-FROM python:3.7.3-alpine3.10 as base
+FROM python:3.8.12-alpine as base
 # fix for zombi processes
 RUN apk add --update \
         alpine-sdk \
