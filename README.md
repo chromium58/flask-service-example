@@ -32,6 +32,7 @@ $ curl -X POST -H "Content-Type: application/json" -d '{"city": "Moscow"}' http:
 
 This example has unit and integration tests.
 
+
 Unit tests are located in app/tests/controllers
 Unit tests are simple, they check our API by mocking external wttr.in website in our case.
 
